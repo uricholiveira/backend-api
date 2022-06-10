@@ -11,6 +11,7 @@ fastapi = "^0.78.0"
 uvicorn = "^0.17.6"
 SQLAlchemy = "^1.4.37"
 alembic = "^1.8.0"
+pydantic = "^1.9.1"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.19.0"
