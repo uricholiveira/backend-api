@@ -1,7 +1,9 @@
 FROM python:3.10
 
 WORKDIR /app
-COPY . .
+COPY pyproject.toml poetry.lock ./
+
+EXPOSE 3000
 
 ENV \
     PYTHONDONTWRITEBYTECODE=1 \
@@ -19,7 +21,8 @@ ENV PATH="$POETRY_HOME/bin:$PATH"
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-interaction --no-ansi
 
+COPY ./ .
 
 CMD ["alembic", "upgrade", "head"]
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "3000"]

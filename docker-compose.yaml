@@ -8,11 +8,22 @@ services:
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: supersecretpassword
+    networks:
+      - backend_api
+
   api:
-    build: .
+    build:
+      dockerfile: infrastructure/docker/Dockerfile
+      context: .
     volumes:
-      - ../../.:/app
+      - .:/app
     ports:
-      - "8000:8000"
+      - "3000:3000"
     depends_on:
       - database
+    networks:
+      - backend_api
+
+networks:
+  backend_api:
+    driver: bridge

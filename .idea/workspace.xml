@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac85d973-936f-4704-8fed-2b90e4bcae62" name="Changes" comment="" />
+    <list default="true" id="ac85d973-936f-4704-8fed-2b90e4bcae62" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8cc33b91-6cf1-4257-b001-7ba3d86ba599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8cc33b91-6cf1-4257-b001-7ba3d86ba599.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8cc33b91-6cf1-4257-b001-7ba3d86ba599/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8cc33b91-6cf1-4257-b001-7ba3d86ba599/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/settings/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/settings/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/docker/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,32 +41,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/URICH/PycharmProjects/backend-api",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/URICH/PycharmProjects/backend-api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\URICH\PycharmProjects\backend-api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\URICH\PycharmProjects\backend-api" />
       <recent name="C:\Users\URICH\PycharmProjects\backend-api\app\core" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker/docker-compose.yaml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yaml: Compose Deployment">
     <configuration name="Unnamed" type="Python.FastAPI" nameIsGenerated="true">
       <option name="file" value="C:\Users\URICH\PycharmProjects\backend-api\app\main.py" />
       <module name="backend-api" />
@@ -107,9 +116,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
         <item itemvalue="Docker.docker/docker-compose.yaml: Compose Deployment" />
         <item itemvalue="Docker.docker/Dockerfile" />
-        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +131,8 @@
       <option name="presentableId" value="Default" />
       <updated>1655250805892</updated>
       <workItem from="1655250807818" duration="23000" />
-      <workItem from="1655250878682" duration="5171000" />
+      <workItem from="1655250878682" duration="5471000" />
+      <workItem from="1655416402495" duration="1571000" />
     </task>
     <servers />
   </component>

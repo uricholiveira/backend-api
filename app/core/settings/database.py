@@ -12,6 +12,6 @@ class DatabaseConfig(BaseSettings):
     driver: str = "postgresql"
     user: str = "user"
     password: str = "supersecretpassword"
-    host: str = "localhost"
+    host: str = "database"
     port: int = 5432
     url: str = f"{driver}://{user}:{password}@{host}:{port}/postgres"
