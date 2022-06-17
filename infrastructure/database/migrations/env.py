@@ -1,16 +1,14 @@
 from logging.config import fileConfig
 
-from sqlalchemy import engine_from_config
-from sqlalchemy import pool
-
 from alembic import context
+from sqlalchemy import engine_from_config, pool
 
 from app.core.database import Base
-from app.rest.v1.domain.model import models
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 from app.core.settings import settings
+from app.rest.v1.domain.model import models
 
 config = context.config
 config.set_main_option(name="sqlalchemy.url", value=settings.database.url)
@@ -70,9 +68,7 @@ def run_migrations_online() -> None:
     )
 
     with connectable.connect() as connection:
-        context.configure(
-            connection=connection, target_metadata=target_metadata
-        )
+        context.configure(connection=connection, target_metadata=target_metadata)
 
         with context.begin_transaction():
             context.run_migrations()

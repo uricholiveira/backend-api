@@ -1,4 +1,4 @@
-from pydantic import BaseSettings
+from pydantic import BaseSettings, Field
 
 
 class DatabaseParamsConfig(BaseSettings):
@@ -7,11 +7,16 @@ class DatabaseParamsConfig(BaseSettings):
     check_same_thread: bool = False
 
 
+class DatabaseConnConfig(BaseSettings):
+    driver: str = Field("postgresql", env="DB_DRIVER")
+    user: str = Field("user", env="DB_USER")
+    password: str = Field("supersecretpassword", env="DB_PASSWORD")
+    host: str = Field("localhost", env="DB_HOST")
+    port: int = Field(5432, env="DB_PORT")
+    name: str = Field("postgres", env="DB_NAME")
+
+
 class DatabaseConfig(BaseSettings):
     params: DatabaseParamsConfig = DatabaseParamsConfig()
-    driver: str = "postgresql"
-    user: str = "user"
-    password: str = "supersecretpassword"
-    host: str = "database"
-    port: int = 5432
-    url: str = f"{driver}://{user}:{password}@{host}:{port}/postgres"
+    connection: DatabaseConnConfig = DatabaseConnConfig()
+    url: str = f"{connection.driver}://{connection.user}:{connection.password}@{connection.host}:{connection.port}/{connection.name}"

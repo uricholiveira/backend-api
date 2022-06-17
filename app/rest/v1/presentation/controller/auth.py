@@ -7,9 +7,9 @@ from jose import JWTError, jwt
 from sqlalchemy.orm import Session
 from starlette.status import HTTP_401_UNAUTHORIZED
 
-from app.rest.v1.presentation.controller.user import UserController
 from app.core.settings import settings
 from app.rest.v1.domain.model.user import UserModel
+from app.rest.v1.presentation.controller.user import UserController
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/token")
 

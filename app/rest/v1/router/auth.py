@@ -11,10 +11,10 @@ from starlette.status import (
     HTTP_404_NOT_FOUND,
 )
 
-from app.rest.v1.presentation.controller.auth import AuthController, oauth2_scheme
-from app.rest.v1.presentation.controller.user import UserController
 from app.core.database import get_session
 from app.rest.v1.domain.entity.auth import Token
+from app.rest.v1.presentation.controller.auth import AuthController, oauth2_scheme
+from app.rest.v1.presentation.controller.user import UserController
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
@@ -28,14 +28,14 @@ router = APIRouter(prefix="/auth", tags=["Authentication"])
     },
 )
 async def authenticate(
-        email: EmailStr = Query(
-            ...,
-            example="email@yopmail.com",
-        ),
-        password: str = None,
-        session: Session = Depends(get_session),
-        controller: AuthController = Depends(AuthController),
-        user_controller: UserController = Depends(UserController),
+    email: EmailStr = Query(
+        ...,
+        example="email@yopmail.com",
+    ),
+    password: str = None,
+    session: Session = Depends(get_session),
+    controller: AuthController = Depends(AuthController),
+    user_controller: UserController = Depends(UserController),
 ):
     user = await user_controller.get(session=session, email=email, as_list=False)
     if not user:
@@ -65,10 +65,10 @@ async def authenticate(
     response_model=Token,
 )
 async def login(
-        form_data: OAuth2PasswordRequestForm = Depends(),
-        session: Session = Depends(get_session),
-        controller: AuthController = Depends(AuthController),
-        user_controller: UserController = Depends(UserController),
+    form_data: OAuth2PasswordRequestForm = Depends(),
+    session: Session = Depends(get_session),
+    controller: AuthController = Depends(AuthController),
+    user_controller: UserController = Depends(UserController),
 ):
     user = await user_controller.get(
         session=session, email=form_data.username, as_list=False
@@ -102,9 +102,9 @@ async def login(
     },
 )
 async def test(
-        access_token: str = Depends(oauth2_scheme),
-        session: Session = Depends(get_session),
-        controller: AuthController = Depends(AuthController),
+    access_token: str = Depends(oauth2_scheme),
+    session: Session = Depends(get_session),
+    controller: AuthController = Depends(AuthController),
 ) -> JSONResponse:
     user = await controller.decode_access_token(session=session, token=access_token)
     if user:

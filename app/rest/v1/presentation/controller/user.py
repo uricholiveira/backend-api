@@ -2,8 +2,8 @@ from typing import List
 
 from sqlalchemy.orm import Session
 
-from app.rest.v1.domain.model.user import UserModel
 from app.rest.v1.domain.entity.user import UserCreateEntity, UserPatchEntity
+from app.rest.v1.domain.model.user import UserModel
 
 
 class UserController:
@@ -50,7 +50,9 @@ class UserController:
         session.commit()
         return user
 
-    async def update(self, session: Session, user: UserModel, entity: UserPatchEntity) -> UserModel:
+    async def update(
+        self, session: Session, user: UserModel, entity: UserPatchEntity
+    ) -> UserModel:
         """ "No one rule needs to be executed here, so we add and commit only"""
         for k, v in entity.dict(exclude_unset=True).items():
             setattr(user, k, v)
