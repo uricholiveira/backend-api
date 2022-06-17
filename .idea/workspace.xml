@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac85d973-936f-4704-8fed-2b90e4bcae62" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.flake8" beforeDir="false" afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8cc33b91-6cf1-4257-b001-7ba3d86ba599.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8cc33b91-6cf1-4257-b001-7ba3d86ba599.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8cc33b91-6cf1-4257-b001-7ba3d86ba599/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8cc33b91-6cf1-4257-b001-7ba3d86ba599/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/settings/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/settings/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/rest/v1/domain/model/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/rest/v1/domain/model/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/rest/v1/presentation/controller/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/rest/v1/presentation/controller/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/rest/v1/presentation/controller/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/rest/v1/presentation/controller/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/rest/v1/router/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/rest/v1/router/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/settings/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/rest/common/util/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/rest/common/util/logger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/rest/v1/router/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/rest/v1/router/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/database/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/database/migrations/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/database/migrations/versions/90acd220358b_first_migration.py" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/database/migrations/versions/90acd220358b_first_migration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/docker/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +132,8 @@
       <workItem from="1655250807818" duration="23000" />
       <workItem from="1655250878682" duration="5471000" />
       <workItem from="1655416402495" duration="1571000" />
-      <workItem from="1655482623313" duration="4602000" />
+      <workItem from="1655482623313" duration="6609000" />
+      <workItem from="1655507265589" duration="1483000" />
     </task>
     <servers />
   </component>
